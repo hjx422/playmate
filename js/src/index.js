@@ -1,11 +1,16 @@
 /**
  * Created by Administrator on 2018/5/13.
  */
-
-import React from 'react'
+import 'babel-polyfill'
+import React, { Component } from 'react'
 import ReactDom from 'react-dom'
 
+import Root from './root.dev.js'
+import configStore from './store/configStore.js'
+
+const store = configStore()
+
 ReactDom.render(
-  <h1>Hello world</h1>,
+  <Root store={store} />,
   document.getElementById('root')
 )

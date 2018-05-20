@@ -1,0 +1,6 @@
+/**
+ * Created by Administrator on 2018/5/14.
+ */
+export const GET_EXAMPLES_REQUEST = 'GET_EXAMPLES_REQUEST'
+export const GET_EXAMPLES_SUCCESS = 'GET_EXAMPLES_SUCCESS'
+export const GET_EXAMPLES_FAILURE = 'GET_EXAMPLES_FAILURE'
