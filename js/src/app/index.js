@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import { withRouter } from 'react-router-dom'
 
 class Index extends React.Component {
   //static propTypes = {
@@ -26,6 +27,8 @@ function mapDispatchToProps(dispatch) {
   }
 }
 
-export default connect(
-  mapStateToProps, mapDispatchToProps
-)(Index)
+export default withRouter(
+  connect(
+    mapStateToProps, mapDispatchToProps
+  )(Index)
+)
