@@ -20,8 +20,6 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
   return {
-    gotoE2: () => dispatch(i18.switchLanguage()),
-    getExamples: () => dispatch(example.getExamples())
   }
 }
 
