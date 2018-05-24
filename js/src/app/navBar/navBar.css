@@ -1,0 +1,44 @@
+.container {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  background: lightgray;
+}
+
+.divider {
+  position: relative;
+  width: 100%;
+  height: 1px;
+  background: red;
+}
+
+.columns {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.column {
+  position: relative;
+  display: inline-block;
+  margin: auto;
+  /*left: 50%;*/
+  /*transform: translate(-50%, 0);*/
+}
+
+.columnIcon {
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+  margin: auto;
+  /*left: 50%;*/
+  /*transform: translate(-50%, 0);*/
+}
+
+.columnName {
+  position: relative;
+  margin: auto;
+  text-align: center;
+  /*left: 50%;*/
+  /*transform: translate(-50%, 0);*/
+}
