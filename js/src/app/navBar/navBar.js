@@ -18,9 +18,9 @@ export default class NavBar extends React.Component {
   //}
 
   renderColumns() {
-    return columns.map((column) => {
+    return columns.map((column, i) => {
       return (
-        <div className={styles['column']}>
+        <div className={styles['column']} key={i}>
           <img src={ column.icon } className={styles['columnIcon']}/>
           <div className={styles['columnName']}>{ column.name }</div>
         </div>
