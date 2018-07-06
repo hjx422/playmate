@@ -15,7 +15,13 @@ module.exports = {
     rules: [
       {
         test: /\.css$/,
+        exclude: path.resolve(__dirname, 'node_modules'),
         use: ['style-loader', 'css-loader?modules&importLoaders=1']
+      },
+      {
+        test: /\.css$/,
+        include: path.resolve(__dirname, 'node_modules'),
+        use: ['style-loader', 'css-loader']
       },
       {
         test: /\.(png|svg|jpg|gif)$/,
