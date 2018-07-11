@@ -9,7 +9,8 @@ module.exports = {
   entry: ['./src/index.js'],
   output: {
     filename: 'app.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist'),
+    publicPath: '/'
   },
   module: {
     rules: [
@@ -49,11 +50,5 @@ module.exports = {
     // 热检测文件改动替换插件
     new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin()
-  ],
-
-  // webpack-dev-server 配置
-  devServer: {
-    contentBase: './dist',
-    hot: true
-  }
+  ]
 }
