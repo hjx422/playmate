@@ -50,5 +50,10 @@ module.exports = {
     // 热检测文件改动替换插件
     new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin()
-  ]
+  ],
+  resolve: {
+    alias: {
+      root: path.resolve(__dirname, 'src')
+    }
+  }
 }
